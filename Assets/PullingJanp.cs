@@ -27,6 +27,7 @@ public class PullingJanp : MonoBehaviour
             clickPosition = Input.mousePosition;
         }
 
+
         if (Input.GetMouseButtonUp(0))
         {
             //クリックした座標と離した座標の差分を取得
