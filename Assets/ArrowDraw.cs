@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ArrowDraw : MonoBehaviour
 {
-    public GameObject ArrowImage;
+    //public GameObject ArrowImage;
     [SerializeField]
     private Image arrowImage;
     private Vector3 clickPosition;
@@ -23,7 +23,7 @@ public class ArrowDraw : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             clickPosition = Input.mousePosition;
-            ArrowImage.gameObject.SetActive(true);
+            arrowImage.gameObject.SetActive(true);
         }
         if (Input.GetMouseButton(0))
         {
@@ -44,7 +44,7 @@ public class ArrowDraw : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0))
         {
-            ArrowImage.gameObject.SetActive(false);
+            arrowImage.gameObject.SetActive(false);
         }
 
     }
